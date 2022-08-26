@@ -1,5 +1,5 @@
-let mapleader = "\"
-set timeoutlen 500
+let mapleader = "\\"
+set timeout timeoutlen=500
 set tabstop=4
 set expandtab
 
