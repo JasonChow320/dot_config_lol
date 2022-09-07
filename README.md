@@ -10,3 +10,4 @@ This is my Linux setup with tmux.conf, vimrc, and useful apt installs
 * code
 * htop
 * screen
+* powerline (fonts-powerline as well)
