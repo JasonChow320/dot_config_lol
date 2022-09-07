@@ -11,3 +11,4 @@ This is my Linux setup with tmux.conf, vimrc, and useful apt installs
 * htop
 * screen
 * powerline (fonts-powerline as well)
+* tmux-mem-cpu-load
