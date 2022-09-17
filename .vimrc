@@ -2,6 +2,10 @@ let mapleader = "\\"
 set timeout timeoutlen=500
 set tabstop=4
 set expandtab
+set shiftwidth=4
+set autoindent
+set smartindent
+set cindent
 
 " All insert mappings
 inoremap jk <Esc>
