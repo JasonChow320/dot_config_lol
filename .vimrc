@@ -17,6 +17,7 @@ inoremap <leader>A <Esc>A
 nnoremap <leader><space> :update<cr>
 nnoremap <leader>o o<Esc>
 nnoremap <leader>O O<Esc>
+nnoremap <leader>c :set cursorline! cursorcolumn!<cr>
 
 " Enables powerline
 python3 from powerline.vim import setup as powerline_setup
