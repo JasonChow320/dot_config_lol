@@ -10,7 +10,7 @@ set smartindent
 set cindent
 
 syntax on                                                                                        
-colorscheme slate
+colorscheme ron
 
 " Binds to use relative line number in Normal mode and absolute line number in Insert mode
 set number
