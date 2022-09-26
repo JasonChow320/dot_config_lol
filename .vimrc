@@ -1,4 +1,6 @@
 let mapleader = "\\"
+
+" Basic settings
 set timeout timeoutlen=500
 set tabstop=4
 set expandtab
@@ -6,6 +8,17 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set cindent
+
+syntax on                                                                                        
+colorscheme slate
+
+" Binds to use relative line number in Normal mode and absolute line number in Insert mode
+set number
+  augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave * if &nu | set nornu | endif
+augroup END
 
 " All insert mappings
 inoremap jk <Esc>
