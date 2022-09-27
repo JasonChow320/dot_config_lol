@@ -9,6 +9,7 @@ set autoindent
 set smartindent
 set cindent
 
+" Turn on syntax highlighting and use ron colorscheme
 syntax on                                                                                        
 colorscheme ron
 
@@ -31,6 +32,14 @@ nnoremap <leader><space> :update<cr>
 nnoremap <leader>o o<Esc>
 nnoremap <leader>O O<Esc>
 nnoremap <leader>c :set cursorline! cursorcolumn!<cr>
+
+" Center searches
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
 
 " Enables powerline
 python3 from powerline.vim import setup as powerline_setup
