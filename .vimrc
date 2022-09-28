@@ -1,10 +1,14 @@
+""""""""""""""""""
+" Basic settings "
+""""""""""""""""""
 let mapleader = "\\"
-
-" Basic settings
 set timeout timeoutlen=500
+
+" tabs and shift (> & <) spaces, enable auto and smart indent
 set tabstop=4
 set expandtab
 set shiftwidth=4
+
 set autoindent
 set smartindent
 set cindent
@@ -21,13 +25,30 @@ set number
   autocmd BufLeave,FocusLost,InsertEnter,WinLeave * if &nu | set nornu | endif
 augroup END
 
-" All insert mappings
+
+
+"""""""""""""""""""""""
+" All insert mappings "
+"""""""""""""""""""""""
 inoremap jk <Esc>
 inoremap <leader><space> <Esc>:update<cr>gi
 inoremap <leader>a <Esc>la
 inoremap <leader>A <Esc>A
 
-" All normal mappings
+" Auto complete for brackets, quotes
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
+
+
+"""""""""""""""""""""""
+" All normal mappings "
+"""""""""""""""""""""""
 nnoremap <leader><space> :update<cr>
 nnoremap <leader>o o<Esc>
 nnoremap <leader>O O<Esc>
@@ -41,7 +62,12 @@ nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
 
-" Enables powerline
+
+
+"""""""""""
+" Plugins "
+"""""""""""
+" Powerline
 python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
