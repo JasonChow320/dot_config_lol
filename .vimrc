@@ -36,13 +36,13 @@ inoremap <leader>a <Esc>la
 inoremap <leader>A <Esc>A
 
 " Auto complete for brackets, quotes
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
+inoremap <leader>" ""<left>
+inoremap <leader>' ''<left>
+inoremap <leader>( ()<left>
+inoremap <leader>[ []<left>
+inoremap <leader>{ {}<left>
+inoremap <leader>{<CR> {<CR>}<ESC>O
+inoremap <leader>{;<CR> {<CR>};<ESC>O
 
 
 
