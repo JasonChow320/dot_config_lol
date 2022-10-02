@@ -4,7 +4,7 @@
 let mapleader = "\\"
 set timeout timeoutlen=500
 
-" tabs and shift (> & <) spaces, enable auto and smart indent
+" tab and shift (> & <) spaces, enable auto and smart indent
 set tabstop=4
 set expandtab
 set shiftwidth=4
@@ -12,6 +12,9 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set cindent
+
+" Allow vim to increment/decrement letters with ctrl a/x
+set nrformats+=alpha
 
 " Turn on syntax highlighting and use ron colorscheme
 syntax on                                                                                        
