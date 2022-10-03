@@ -4,6 +4,16 @@
 let mapleader = "\\"
 set timeout timeoutlen=500
 
+" GUI and background settings
+set exrc
+set nohlsearch
+set hidden
+set noerrorbells
+set nowrap
+set incsearch
+set scrolloff=8
+set signcolumn=yes
+
 " tab and shift (> & <) spaces, enable auto and smart indent
 set tabstop=4
 set expandtab
