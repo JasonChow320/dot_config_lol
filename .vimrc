@@ -30,6 +30,9 @@ set nrformats+=alpha
 syntax on                                                                                        
 colorscheme ron
 
+" Allow backspace to act like in a regular editor in insert mode
+set backspace=indent,eol,start
+
 " Binds to use relative line number in Normal mode and absolute line number in Insert mode
 set number
   augroup numbertoggle
