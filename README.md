@@ -13,6 +13,7 @@ This is my Linux setup with tmux.conf, vimrc, and useful apt installs
 * powerline (fonts-powerline as well)
 * cmake
 * cscope
+* cmatrix
 
 sudo apt install git tmux vim code htop screen powerline cmake cscope
 
