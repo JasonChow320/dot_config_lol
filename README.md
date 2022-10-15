@@ -14,6 +14,8 @@ This is my Linux setup with tmux.conf, vimrc, and useful apt installs
 * cmake
 * cscope
 
+sudo apt install git tmux vim code htop screen powerline cmake cscope
+
 ## useful github install
 
 * CtrlP
