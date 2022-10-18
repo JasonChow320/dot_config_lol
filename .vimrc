@@ -50,6 +50,7 @@ inoremap jk <Esc>
 inoremap <leader><space> <Esc>:update<cr>gi
 inoremap <leader>a <Esc>la
 inoremap <leader>A <Esc>A
+inoremap <S-Tab> <C-V><Tab>
 
 " Auto complete for brackets, quotes
 inoremap <leader>" ""<left>
