@@ -1,4 +1,4 @@
-""""""""""""""""""
+""""""""""""""""""""
 " Basic settings "
 """"""""""""""""""
 let mapleader = "\\"
@@ -88,43 +88,27 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " https://github.com/neovim/nvim-lspconfig
     Plug 'neovim/nvim-lspconfig'
-    "
+    "Plug 'williamboman/nvim-lsp-installer'
+    "Plug 'hrsh7th/cmp-nvim-lsp'
+
     " https://github.com/preservim/nerdtree 
     Plug 'preservim/nerdtree' 
-    "Plug 'scrooloose/NERDTree'
-    "
+    
     " https://github.com/nvim-treesitter/nvim-treesitter
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TsUpdate'}
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
     " https://github.com/nvim-telescope/telescope.nvim
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
-
-    " https://github.com/nvim-lualine/lualine.nvim
-    Plug 'nvim-lualine/lualine.nvim'
-    " If you want to have icons in your statusline choose one of these
-    Plug 'kyazdani42/nvim-web-devicons'
 
     " https://github.com/dense-analysis/ale#installation 
     Plug 'dense-analysis/ale'
 
 call plug#end()
 
-lua << END
-require('lualine').setup {
-    options = {
-        theme = 'OceanicNext'
-    }
-}
-END
+" Source config files
+luafile ~/.config/nvim/plugin_config/lsp_cfg.lua
+luafile ~/.config/nvim/plugin_config/treesitter_cfg.lua
+luafile ~/.config/nvim/plugin_config/telescope_cfg.lua
+source ~/.config/nvim/plugin_config/nerdtree_cfg.vim
 
-
-
-"""""""""""""
-" Telescope "
-"""""""""""""
-" Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
