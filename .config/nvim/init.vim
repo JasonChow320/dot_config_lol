@@ -12,6 +12,7 @@ set noerrorbells
 set nowrap
 set incsearch
 set scrolloff=8
+set sidescrolloff=8
 set signcolumn=yes
 
 " tab and shift (> & <) spaces, enable auto and smart indent

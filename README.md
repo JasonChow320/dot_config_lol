@@ -27,5 +27,4 @@ sudo apt-get install build-essential
 
 ## useful neovim
 
-* vim-plug (https://www.chrisatmachine.com/blog/category/neovim/01-vim-plug)
-* init.vim should have all of the plugins
+ * read nvim/README.md for more information
