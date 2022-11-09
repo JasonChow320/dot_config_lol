@@ -28,7 +28,7 @@ set nrformats+=alpha
 
 " Turn on syntax highlighting and use ron colorscheme
 syntax on                                                                                        
-colorscheme ron
+colorscheme ron " this is overwritten if using neovim :D
 
 " Allow backspace to act like in a regular editor in insert mode
 set backspace=indent,eol,start
@@ -84,31 +84,5 @@ nnoremap g# g#zz
 """""""""""
 " Plugins "
 """""""""""
-call plug#begin('~/.config/nvim/autoload/plugged')
-
-    " https://github.com/neovim/nvim-lspconfig
-    Plug 'neovim/nvim-lspconfig'
-    "Plug 'williamboman/nvim-lsp-installer'
-    "Plug 'hrsh7th/cmp-nvim-lsp'
-
-    " https://github.com/preservim/nerdtree 
-    Plug 'preservim/nerdtree' 
-    
-    " https://github.com/nvim-treesitter/nvim-treesitter
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-    " https://github.com/nvim-telescope/telescope.nvim
-    Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
-
-    " https://github.com/dense-analysis/ale#installation 
-    Plug 'dense-analysis/ale'
-
-call plug#end()
-
-" Source config files
-luafile ~/.config/nvim/plugin_config/lsp_cfg.lua
-luafile ~/.config/nvim/plugin_config/treesitter_cfg.lua
-luafile ~/.config/nvim/plugin_config/telescope_cfg.lua
-source ~/.config/nvim/plugin_config/nerdtree_cfg.vim
+luafile ~/.config/nvim/_init.lua
 
