@@ -83,6 +83,8 @@ nnoremap g# g#zz
 " Toggle pattern highlight
 nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
 
+
+
 """""""""""
 " Plugins "
 """""""""""

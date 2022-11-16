@@ -8,28 +8,32 @@ local hide_in_width = function()
 end
 
 local diagnostics = {
-	"diagnostics",
-	sources = { "nvim_diagnostic" },
-	sections = { "error", "warn" },
-	symbols = { error = " ", warn = " " },
-	colored = false,
-	update_in_insert = false,
-	always_visible = true,
+
+    "diagnostics",
+    sources = { "nvim_diagnostic" },
+    sections = { "error", "warn" },
+    symbols = { error = " ", warn = " " },
+    colored = false,
+    update_in_insert = false,
+    always_visible = true,
 }
 
 local diff = {
-	"diff",
-	colored = false,
-	symbols = { added = " ", modified = " ", removed = " " }, -- changes diff symbols
-  cond = hide_in_width
+
+    "diff",
+    colored = false,
+    symbols = { added = " ", modified = " ", removed = " " }, -- changes diff symbols
+    cond = hide_in_width
 }
 
 local location = {
+
     "location",
     padding = 0,
 }
 
 local filetype = {
+
 	"filetype",
 	icons_enabled = false,
 	icon = nil,
@@ -40,6 +44,7 @@ local spaces = function()
 end
 
 lualine.setup({
+
 	options = {
 		icons_enabled = true,
 		theme = "auto",
