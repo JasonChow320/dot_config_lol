@@ -9,6 +9,7 @@ local servers = {
 	-- "yamlls",
     "clangd",
     "rust_analyzer",
+    "jdtls",
 }
 
 local settings = {
