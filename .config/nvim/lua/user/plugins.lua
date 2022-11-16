@@ -79,7 +79,10 @@ return packer.startup(function(use)
     -- lualine
     use "nvim-lualine/lualine.nvim"
 
-	-- Automatically set up your configuration after cloning packer.nvim
+    -- impatient
+    use "lewis6991/impatient.nvim"
+	
+    -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
