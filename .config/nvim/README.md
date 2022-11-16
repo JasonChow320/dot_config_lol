@@ -8,7 +8,8 @@ https://github.com/LunarVim/Neovim-from-scratch
 
 ## To set up
 
-Should automatically install everything, but if not, do :PackerSync
+Should automatically install everything, but if not, do :PackerSync  
+Also need to install ripgrep for telescope
 
 ## Install nerd fonts
 
@@ -49,4 +50,5 @@ do :TSUpdate
 ### nvim-tree
 
 <leader-e> to toggle nvim-tree
+<leader-E> to go back and forth
 
