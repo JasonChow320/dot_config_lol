@@ -49,6 +49,6 @@ do :TSUpdate
 
 ### nvim-tree
 
-leader-e to toggle nvim-tree
+leader-e to toggle nvim-tree  
 leader-E to go back and forth
 
