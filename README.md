@@ -28,3 +28,9 @@ sudo apt-get install build-essential
 ## useful neovim
 
  * read nvim/README.md for more information
+
+# README PLEASE
+
+ * add PackerSync in plugins-setup.lua
+ 
+ 
