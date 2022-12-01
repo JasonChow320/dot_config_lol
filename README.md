@@ -2,6 +2,8 @@
 
 This is my Linux setup with tmux.conf, vimrc, and useful apt installs
 
+---
+
 ## useful apt installs
 
 * git
@@ -16,9 +18,13 @@ This is my Linux setup with tmux.conf, vimrc, and useful apt installs
 * cmatrix
 * neovim (install from release instead of apt)
 
+```bash
 sudo apt install git tmux vim htop screen powerline cmake cscope cmatrix
+```
 
+```bash
 sudo apt-get install build-essential
+```
 
 ## useful github install (for vim)
 
