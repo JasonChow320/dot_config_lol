@@ -2,7 +2,21 @@
 
 This is my Linux setup which includes tmux, bashrc, vim, neovim and other essential software for day-to-day workflow
 
-## useful apt installs
+## Install.sh
+
+install.sh will automatically include the softwares and install configurations into the correct directory  
+Usage:
+```bash
+git clone git@github.com:JasonChow320/dot_config_lol.git
+cd dot_config_lol
+./install.sh
+```
+
+---
+
+If you would like to manually install each software and configurations, below is the list of setups you need to use with the configuration
+
+## apt installs
 
 * git
 * tmux
@@ -31,6 +45,8 @@ sudo apt-get install build-essential
 * CtrlP
 * tmux-mem-cpu-load
 
-## useful neovim
+## neovim
 
  * read nvim/README.md for more information
+ * install neovim v0.8 or above
+
