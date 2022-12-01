@@ -4,7 +4,7 @@ This is my Linux setup which includes tmux, bashrc, vim, neovim and other essent
 
 ## Install.sh
 
-install.sh will automatically include the softwares and install configurations into the correct directory  
+install.sh will automatically download the softwares and install configurations into the correct directory  
 Usage:
 ```bash
 git clone git@github.com:JasonChow320/dot_config_lol.git
@@ -13,6 +13,8 @@ cd dot_config_lol
 ```
 
 ---
+
+## Manually installation
 
 If you would like to manually install each software and configurations, below is the list of setups you need to use with the configuration
 
