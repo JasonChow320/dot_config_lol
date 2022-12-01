@@ -35,7 +35,7 @@ If you would like to manually install each software and configurations, below is
 To install: 
 
 ```bash
-sudo apt install git tmux vim htop screen powerline cmake cscope cmatrix
+sudo apt install git tmux vim htop screen powerline fonts-powerline cmake cscope cmatrix
 ```
 
 ```bash
