@@ -36,6 +36,6 @@ git checkout stable
 make CMAKE_BUILD_TYPE=Release \
      CMAKE_INSTALL_PREFIX=~/dev/neovim install
 cd ..
-echo 'export PATH="<NEOVIM_LOCATION>/bin:$PATH"' >> .bashrc
+echo 'export PATH="~/dev/neovim/bin:$PATH"' >> .bashrc
 
 # END
