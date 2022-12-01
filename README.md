@@ -1,8 +1,6 @@
 # Linux Setup
 
-This is my Linux setup with tmux.conf, vimrc, and useful apt installs
-
----
+This is my Linux setup which includes tmux, bashrc, vim, neovim and other essential software for day-to-day workflow
 
 ## useful apt installs
 
@@ -17,6 +15,8 @@ This is my Linux setup with tmux.conf, vimrc, and useful apt installs
 * cscope
 * cmatrix
 * neovim (install from release instead of apt)
+
+To install: 
 
 ```bash
 sudo apt install git tmux vim htop screen powerline cmake cscope cmatrix
@@ -34,9 +34,3 @@ sudo apt-get install build-essential
 ## useful neovim
 
  * read nvim/README.md for more information
-
-# README PLEASE
-
- * add PackerSync in plugins-setup.lua
- 
- 
