@@ -50,5 +50,5 @@ sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g
 ## neovim
 
  * read nvim/README.md for more information
- * install neovim v0.8 or above
+ * install neovim v0.8 or above (https://github.com/neovim/neovim/releases)
 
