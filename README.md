@@ -39,7 +39,7 @@ sudo apt install git tmux vim htop screen powerline fonts-powerline cmake cscope
 ```
 
 ```bash
-sudo apt-get install build-essential
+sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g++
 ```
 
 ## useful github install (for vim)
