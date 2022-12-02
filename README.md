@@ -1,8 +1,8 @@
 # Linux Setup
 
-This is my Linux setup which includes tmux, bashrc, vim, neovim and other essential software for day-to-day workflow
+This is my Linux (Debian) setup which includes tmux, bashrc, vim, neovim and other essential software for day-to-day workflow
 
-## Install.sh
+## Install.sh (under development, please refer to manual installation for a correct set up
 
 install.sh will automatically download the softwares and install configurations into the correct directory  
 Usage:
@@ -14,7 +14,7 @@ cd dot_config_lol
 
 ---
 
-## Manually installation
+## Manual installation
 
 If you would like to manually install each software and configurations, below is the list of setups you need to use with the configuration
 
