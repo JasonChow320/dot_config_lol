@@ -16,7 +16,7 @@ cd dot_config_lol
 
 ## Manual installation
 
-If you would like to manually install each software and configurations, below is the list of setups you need to use with the configuration
+If you would like to manually install each software and configuration, below is the list of setup you need to install alongside with the configuration
 
 ## apt installs
 
