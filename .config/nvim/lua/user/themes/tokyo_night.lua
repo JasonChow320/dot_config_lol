@@ -1,4 +1,4 @@
-local status_ok, lualine = pcall(require, "lualine")
+local status_ok, tokyonight = pcall(require, "tokyonight")
 if not status_ok then
 	return
 end
@@ -6,6 +6,9 @@ end
 -- Lua
 vim.cmd[[colorscheme tokyonight]]
 vim.cmd[[hi Normal guibg=NONE ctermbg=NONE]]
+vim.cmd[[hi NvimTreeNormal guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE]]
+vim.cmd[[hi NvimTreeNormalNC guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE]]
+vim.cmd[[hi TelescopePreviewBlock guibg=NONE]]
 
 -- enable theme for colorscheme
 require('lualine').setup {

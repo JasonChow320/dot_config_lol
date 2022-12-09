@@ -9,11 +9,14 @@ https://github.com/LunarVim/Neovim-from-scratch
 ## To set up
 
 Should automatically install everything, but if not, do :PackerSync  
-Also need to install ripgrep for telescope
 
-## Install nerd fonts
+## Dependency
 
-https://github.com/ryanoasis/nerd-fonts#patched-fonts
+nerd fonts:  
+https://github.com/ryanoasis/nerd-fonts#patched-fonts  
+
+ripgrep:  
+https://github.com/BurntSushi/ripgrep#installation
 
 ### Key mappings
 
