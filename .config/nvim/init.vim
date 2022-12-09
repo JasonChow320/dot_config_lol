@@ -79,6 +79,8 @@ nnoremap * *zz
 nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
 
 " Toggle pattern highlight
 nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
