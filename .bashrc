@@ -1,3 +1,6 @@
+# alias
+alias d="cd ~/dev"
+
 # cmatrix
 alias cm="cmatrix -ba -u 10"
 
@@ -5,3 +8,4 @@ alias cm="cmatrix -ba -u 10"
 if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
         source /usr/share/powerline/bindings/bash/powerline.sh
 fi
+
