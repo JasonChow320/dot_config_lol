@@ -3,7 +3,7 @@
 # Install softwares
 
 yes | sudo apt install git tmux vim htop screen powerline fonts-powerline cmake cscope cmatrix curl
-yes | sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g++ python-dev python-pip python3-dev python3-pip
+yes | sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g++ python3-dev python3-pip
 
 # Set up git
 
