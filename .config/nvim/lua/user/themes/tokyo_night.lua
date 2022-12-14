@@ -3,12 +3,14 @@ if not status_ok then
 	return
 end
 
--- Lua
+-- Lua to remove plugin background
 vim.cmd[[colorscheme tokyonight]]
 vim.cmd[[hi Normal guibg=NONE ctermbg=NONE]]
 vim.cmd[[hi NvimTreeNormal guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE]]
-vim.cmd[[hi NvimTreeNormalNC guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE]]
-vim.cmd[[hi TelescopePreviewBlock guibg=NONE]]
+--vim.cmd[[hi NvimTreeNormalNC guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE]]
+--vim.cmd[[hi TelescopeNormal guibg=NONE guifg=NONE ctermfg=NONE ctermfg=NONE]]
+--vim.cmd[[hi TelescopeBorder guibg=NONE guifg=NONE]]
+vim.cmd[[hi LineNr guibg=#1f2335]]
 
 -- enable theme for colorscheme
 require('lualine').setup {
