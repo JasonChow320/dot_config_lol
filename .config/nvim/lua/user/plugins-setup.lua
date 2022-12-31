@@ -44,6 +44,9 @@ return packer.startup(function(use)
     use "wbthomason/packer.nvim" -- Have packer manage itself
     use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
 
+    -- Colorscheme
+    use 'folke/tokyonight.nvim'
+
     -- Cmp 
     use "hrsh7th/nvim-cmp" -- The completion plugin
     use "hrsh7th/cmp-buffer" -- buffer completions
@@ -78,6 +81,9 @@ return packer.startup(function(use)
 
     -- lualine
     use "nvim-lualine/lualine.nvim"
+
+    -- bufferline
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
     -- impatient
     use 'lewis6991/impatient.nvim'

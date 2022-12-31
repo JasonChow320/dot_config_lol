@@ -55,4 +55,5 @@ sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g
 ## Nerd-Fonts
 
 * JetBrainsMono Nerd Font
+* MonoSpace
 
