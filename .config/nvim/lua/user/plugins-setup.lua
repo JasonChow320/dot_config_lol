@@ -85,6 +85,9 @@ return packer.startup(function(use)
     -- bufferline
     use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
+    -- Gitsigns
+	use "lewis6991/gitsigns.nvim"
+
     -- impatient
     use 'lewis6991/impatient.nvim'
 
