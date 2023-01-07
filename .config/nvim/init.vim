@@ -90,5 +90,6 @@ nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."
 """""""""""
 " Plugins "
 """""""""""
-luafile ~/.config/nvim/_init.lua
+"luafile ~/.config/nvim/_init.lua
+luafile ~/appdata/Local/nvim/_init.lua
 
