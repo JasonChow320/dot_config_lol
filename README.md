@@ -42,11 +42,6 @@ sudo apt install git tmux vim htop screen powerline fonts-powerline cmake cscope
 sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g++ python-dev python-pip python3-dev python3-pip
 ```
 
-## useful github install (for vim)
-
-* CtrlP
-* tmux-mem-cpu-load
-
 ## neovim
 
 * read nvim/README.md for more information

@@ -23,14 +23,4 @@ cd ~/
 mkdir -p dev
 cd dev
 
-# Install tmux-mem-cpu-load
-
-git clone git@github.com:thewtex/tmux-mem-cpu-load.git
-cd tmux-mem-cpu-load
-cmake .
-make
-
-sudo make install
-cd ..
-
 # END
