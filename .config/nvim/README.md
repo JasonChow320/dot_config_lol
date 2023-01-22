@@ -12,11 +12,32 @@ Should automatically install everything, but if not, do :PackerSync
 
 ## Dependency
 
-nerd fonts:  
+**nerd fonts** - for unique characters  
 https://github.com/ryanoasis/nerd-fonts#patched-fonts  
 
-ripgrep:  
+---
+
+**ripgrep** - for telescope grep command  
 https://github.com/BurntSushi/ripgrep#installation
+
+--- 
+
+**tree-sitter-cli** - to install some tree-sitter parsers  
+npm install -g tree-sitter-cli
+
+---
+
+Null-ls
+
+**stylua**:  
+cargo install stylua
+
+**prettier**:  
+npm install -g prettier
+
+**black**:  
+pip install black
+
 
 ### Key mappings
 

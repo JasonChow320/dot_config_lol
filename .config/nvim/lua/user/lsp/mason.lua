@@ -1,15 +1,21 @@
 local servers = {
-	"sumneko_lua",
-	-- "cssls",
-	-- "html",
-	-- "tsserver",
-	"pyright",
-	-- "bashls",
-	"jsonls",
-	-- "yamlls",
+
+    "awk_ls",
+    "asm_lsp",
+	"bashls",
     "clangd",
-    "rust_analyzer",
+    "cmake",
+	"cssls",
+    "dockerls",
+	"html",
+	"jsonls",
     "jdtls",
+	"tsserver",
+	"sumneko_lua",
+    "marksman",
+	"pyright",
+    "rust_analyzer",
+	"yamlls",
 }
 
 local settings = {

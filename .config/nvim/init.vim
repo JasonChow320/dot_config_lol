@@ -85,10 +85,11 @@ nnoremap <C-u> <C-u>zz
 " Toggle pattern highlight
 nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
 
-
+" Turn all Tabs to Space
+nnoremap <leader>l<space> :%s/\t/    /g<cr>
 
 """""""""""
 " Plugins "
 """""""""""
-luafile _init.lua
-
+luafile ~/.config/nvim/_init.lua
+"luafile ~/appdata/Local/nvim/_init.lua
