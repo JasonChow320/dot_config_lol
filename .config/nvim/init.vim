@@ -88,8 +88,11 @@ nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."
 " Turn all Tabs to Space
 nnoremap <leader>l<space> :%s/\t/    /g<cr>
 
+
+
 """""""""""
 " Plugins "
 """""""""""
 luafile ~/.config/nvim/_init.lua
 "luafile ~/appdata/Local/nvim/_init.lua
+
