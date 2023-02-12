@@ -1,6 +1,6 @@
 # Introduction
 
-This is my neovim setup and all plugins I used, below is the keybindings I use
+This is my neovim setup, below is the keybindings I use
 
 ## Source
 
@@ -37,7 +37,6 @@ npm install -g prettier
 
 **black**:  
 pip install black
-
 
 ### Key mappings
 
