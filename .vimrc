@@ -9,7 +9,8 @@ set exrc
 set nohlsearch
 set hidden
 set noerrorbells
-set nowrap
+"set nowrap
+set modifiable
 set incsearch
 set scrolloff=8
 set signcolumn=yes
