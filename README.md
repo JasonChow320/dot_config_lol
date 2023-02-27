@@ -18,7 +18,7 @@ cd dot_config_lol
 
 If you would like to manually install each software and configuration, below is the list of setup you need to install alongside with the configuration
 
-## apt installs
+## important apt installs
 
 * git
 * tmux
@@ -40,7 +40,7 @@ sudo apt install git tmux vim htop screen powerline fonts-powerline cmake cscope
 ```
 
 ```bash
-sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g++ python3-dev python3-pip
+sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g++ python3-dev python3-pip python3-venv
 ```
 
 ## neovim
@@ -57,6 +57,10 @@ sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g
 
 * https://snapcraft.io/install/mdview/ubuntu
 * sudo snap install mdview
+
+## Rust
+
+* https://www.rust-lang.org/tools/install
 
 --- 
 

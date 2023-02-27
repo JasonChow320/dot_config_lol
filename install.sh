@@ -2,8 +2,16 @@
 
 # Install softwares
 
-yes | sudo apt install git tmux vim htop screen powerline fonts-powerline cmake cscope cmatrix curl net-tools
-yes | sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g++ python3-dev python3-pip
+yes | sudo apt install git tmux vim htop screen powerline fonts-powerline cmake cscope cmatrix curl net-tools npm
+yes | sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g++ python3-dev python3-pip python3-venv
+yes | sudo snap install mdview
+
+cd ~/Downloads
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
+sudo dpkg -i ripgrep_13.0.0_amd64.deb
+cd -
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Set up git
 

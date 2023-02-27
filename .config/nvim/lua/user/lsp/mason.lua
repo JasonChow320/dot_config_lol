@@ -11,7 +11,7 @@ local servers = {
 	"jsonls",
     "jdtls",
 	"tsserver",
-	"sumneko_lua",
+	"lua_ls",
     "marksman",
 	"pyright",
     "rust_analyzer",
