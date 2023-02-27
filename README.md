@@ -31,11 +31,12 @@ If you would like to manually install each software and configuration, below is 
 * cscope
 * cmatrix
 * neovim (install from release instead of apt)
+* npm
 
 To install: 
 
 ```bash
-sudo apt install git tmux vim htop screen powerline fonts-powerline cmake cscope cmatrix curl net-tools
+sudo apt install git tmux vim htop screen powerline fonts-powerline cmake cscope cmatrix curl net-tools npm
 ```
 
 ```bash
@@ -49,6 +50,19 @@ sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g
 
 ## Nerd-Fonts
 
-* JetBrainsMono Nerd Font
+* JetBrainsMonoNL Nerd Font Mono Medium
 * MonoSpace
+
+## mdview
+
+* https://snapcraft.io/install/mdview/ubuntu
+* sudo snap install mdview
+
+--- 
+
+# Getting ssh keys
+
+```bash
+ssh-keygen -b 4096 -t rsa
+```
 

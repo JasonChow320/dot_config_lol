@@ -27,7 +27,7 @@ npm install -g tree-sitter-cli
 
 ---
 
-Null-ls
+## Null-ls
 
 **stylua**:  
 cargo install stylua
