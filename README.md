@@ -70,3 +70,10 @@ sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g
 ssh-keygen -b 4096 -t rsa
 ```
 
+# Updating snap store
+
+```bash
+sudo snap refresh
+snap-store --quit && sudo snap refresh snap-store
+```
+
