@@ -98,7 +98,7 @@ local mappings = {
     [","] = { "<cmd>bp<cr>", "Previous Buffer" },
     ["."] = { "<cmd>bn<cr>", "Next Buffer" },
 
-    p = {
+    P = {
         name = "Packer",
         c = { "<cmd>PackerCompile<cr>", "Compile" },
         i = { "<cmd>PackerInstall<cr>", "Install" },
