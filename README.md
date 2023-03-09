@@ -62,6 +62,10 @@ sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g
 
 * https://www.rust-lang.org/tools/install
 
+## tmux-plugins
+
+* https://github.com/tmux-plugins/tpm
+
 --- 
 
 # Getting ssh keys
@@ -77,3 +81,9 @@ sudo snap refresh
 snap-store --quit && sudo snap refresh snap-store
 ```
 
+# Updating kernel
+
+```bash
+sudo apt-get update
+sudo apt-get dist-upgrade
+```
