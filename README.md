@@ -33,14 +33,16 @@ If you would like to manually install each software and configuration, below is 
 * neovim (install from release instead of apt)
 * npm
 
-To install: 
+To install:
 
 ```bash
-sudo apt install git tmux vim htop screen powerline fonts-powerline cmake cscope cmatrix curl net-tools npm
+sudo apt update
+sudo apt install -y git tmux vim htop screen powerline fonts-powerline cmake cscope cmatrix curl net-tools
 ```
 
 ```bash
-sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g++ python3-dev python3-pip python3-venv
+sudo apt-get update
+sudo apt-get install -y build-essential libtool autoconf automake libncurses5-dev g++ python3-dev python3-pip xclip
 ```
 
 ## neovim
