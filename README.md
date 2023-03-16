@@ -37,12 +37,13 @@ To install:
 
 ```bash
 sudo apt update
-sudo apt install -y git tmux vim htop screen powerline fonts-powerline cmake cscope cmatrix curl net-tools
+sudo apt install -y git tmux vim htop screen powerline fonts-powerline cmake cscope cmatrix curl net-tools npm \
+doxygen doxygen-latex gdb gcc g++ openssh-server openssh-client
 ```
 
 ```bash
 sudo apt-get update
-sudo apt-get install -y build-essential libtool autoconf automake libncurses5-dev g++ python3-dev python3-pip xclip
+sudo apt-get install -y build-essential libtool autoconf automake libncurses5-dev python3-dev python3-pip python3-venv xclip
 ```
 
 ## neovim
