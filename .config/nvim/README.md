@@ -75,3 +75,10 @@ do :TSUpdate
 "leader-e" to toggle nvim-tree
 "leader-E" to go back and forth
 
+### Bear
+
+```bash
+sudo apt install bear
+make clean
+bear make -j
+```
