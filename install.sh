@@ -20,6 +20,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 git config --global user.email "jasonchow9168@gmail.com"
 git config --global user.name "Jason Chow"
+git config --global core.excludesFile ~/.gitignore
 
 # Install configurations
 
