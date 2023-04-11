@@ -120,6 +120,11 @@ local mappings = {
         s = { "<cmd> mark S<cr>", "Mark current to S" },
         d = { "<cmd> mark D<cr>", "Mark current to D" },
         f = { "<cmd> mark F<cr>", "Mark current to F" },
+        h = { "<cmd> mark H<cr>", "Mark current to H" },
+        j = { "<cmd> mark J<cr>", "Mark current to J" },
+        k = { "<cmd> mark K<cr>", "Mark current to K" },
+        l = { "<cmd> mark L<cr>", "Mark current to L" },
+
     },
 
     g = {
