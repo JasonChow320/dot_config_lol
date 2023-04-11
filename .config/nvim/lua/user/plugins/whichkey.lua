@@ -107,6 +107,20 @@ local mappings = {
         S = { "<cmd>PackerStatus<cr>", "Status" },
         u = { "<cmd>PackerUpdate<cr>", "Update" },
     },
+  
+    S = {
+        name = "Session",
+        s = { "<cmd>mksession! proj.vim<cr>", "Save session" },
+        r = { "<cmd>source proj.vim<cr>", "Restore session" },
+    },
+
+    m = {
+        name = "Mark",
+        a = { "<cmd> mark a<cr>", "Mark current to a" },
+        b = { "<cmd> mark b<cr>", "Mark current to b" },
+        c = { "<cmd> mark c<cr>", "Mark current to c" },
+        d = { "<cmd> mark d<cr>", "Mark current to d" },
+    },
 
     g = {
         name = "Git",
