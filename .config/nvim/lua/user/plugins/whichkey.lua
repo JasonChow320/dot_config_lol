@@ -116,10 +116,10 @@ local mappings = {
 
     m = {
         name = "Mark",
-        a = { "<cmd> mark a<cr>", "Mark current to a" },
-        s = { "<cmd> mark s<cr>", "Mark current to s" },
-        d = { "<cmd> mark d<cr>", "Mark current to d" },
-        f = { "<cmd> mark f<cr>", "Mark current to f" },
+        a = { "<cmd> mark A<cr>", "Mark current to A" },
+        s = { "<cmd> mark S<cr>", "Mark current to S" },
+        d = { "<cmd> mark D<cr>", "Mark current to D" },
+        f = { "<cmd> mark F<cr>", "Mark current to F" },
     },
 
     g = {
