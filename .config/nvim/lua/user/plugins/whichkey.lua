@@ -124,7 +124,18 @@ local mappings = {
         j = { "<cmd> mark J<cr>", "Mark current to J" },
         k = { "<cmd> mark K<cr>", "Mark current to K" },
         l = { "<cmd> mark L<cr>", "Mark current to L" },
-
+    },
+  
+    j = {
+        name = "Jump to Mark",
+        a = { "'A", "Jump to Mark A" },
+        s = { "'S", "Jump to Mark S" },
+        d = { "'D", "Jump to Mark D" },
+        f = { "'F", "Jump to Mark F" },
+        h = { "'H", "Jump to Mark H" },
+        j = { "'J", "Jump to Mark J" },
+        k = { "'K", "Jump to Mark K" },
+        l = { "'L", "Jump to Mark L" },
     },
 
     g = {
