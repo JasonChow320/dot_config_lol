@@ -110,9 +110,20 @@ local mappings = {
   
     S = {
         name = "Session",
-        s = { "<cmd>mksession! proj.vim<cr>", "Save session" },
-        r = { "<cmd>source proj.vim<cr>", "Restore session" },
+        s = {
+            name = "Save session",
+            a = { "<cmd>mksession! proj.vim<cr>",  "Save session 1" },
+            s = { "<cmd>mksession! proj1.vim<cr>", "Save session 2" },
+            d = { "<cmd>mksession! proj2.vim<cr>", "Save session 3" },
+        },
+        r = {
+            name = "Restore session",
+            a = { "<cmd>source proj.vim<cr>",  "Restore session 1" },
+            s = { "<cmd>source proj1.vim<cr>", "Restore session 2" },
+            d = { "<cmd>source proj2.vim<cr>", "Restore session 3" },
+        },
     },
+
 
     m = {
         name = "Mark",
