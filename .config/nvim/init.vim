@@ -43,6 +43,9 @@ set number
   autocmd BufLeave,FocusLost,InsertEnter,WinLeave * if &nu | set nornu | endif
 augroup END
 
+" auto close preview window
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif 
+
 
 
 """""""""""""""""""""""
