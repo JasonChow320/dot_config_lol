@@ -23,7 +23,9 @@ https://github.com/BurntSushi/ripgrep#installation
 --- 
 
 **tree-sitter-cli** - to install some tree-sitter parsers  
+```bash
 npm install -g tree-sitter-cli
+```
 
 ---
 
@@ -50,10 +52,8 @@ Check init.vim :D
 
 ### CMP 
 
-```
 "C-j" and "C-k" to move on the auto complete  
 "C-e" to get rid of current cmp  
-```
 
 ### LSP (https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
