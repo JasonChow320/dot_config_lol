@@ -30,13 +30,19 @@ npm install -g tree-sitter-cli
 ## Null-ls
 
 **stylua**:  
+```bash
 cargo install stylua
+```
 
 **prettier**:  
+```bash
 npm install -g prettier
+```
 
 **black**:  
+```bash
 pip install black
+```
 
 ### Key mappings
 
@@ -44,8 +50,10 @@ Check init.vim :D
 
 ### CMP 
 
+```
 "C-j" and "C-k" to move on the auto complete  
 "C-e" to get rid of current cmp  
+```
 
 ### LSP (https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
