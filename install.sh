@@ -5,8 +5,10 @@
 sudo apt update
 sudo apt-get update
 sudo apt upgrade -y
-yes | sudo apt install git tmux vim htop screen powerline fonts-powerline cmake cscope cmatrix curl net-tools npm doxygen doxygen-latex gdb gcc g++ openssh-server openssh-client
-yes | sudo apt-get install build-essential libtool autoconf automake libncurses5-dev g++ python3-dev python3-pip python3-venv xclip
+
+yes | sudo apt install -y git tmux vim htop screen powerline fonts-powerline cmake cscope cmatrix curl net-tools npm \
+doxygen doxygen-latex gdb gcc g++ openssh-server openssh-client clang-format
+yes | sudo apt-get install -y build-essential libtool autoconf automake libncurses5-dev python3-dev python3-pip python3-venv xclip xsel
 yes | sudo snap install mdview
 
 cd ~/Downloads
