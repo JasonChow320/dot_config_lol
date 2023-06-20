@@ -58,10 +58,6 @@ inoremap <leader>A <Esc>A
 inoremap <S-Tab> <C-V><Tab>
 
 " Auto complete for brackets, quotes
-inoremap <leader>" ""<left>
-inoremap <leader>' ''<left>
-inoremap <leader>( ()<left>
-inoremap <leader>[ []<left>
 inoremap <leader>{ {}<left>
 inoremap <leader>{<CR> {<CR>}<ESC>O
 inoremap <leader>{;<CR> {<CR>};<ESC>O
