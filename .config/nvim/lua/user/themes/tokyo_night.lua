@@ -5,6 +5,7 @@ end
 
 -- Lua to remove plugin background
 vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[hi DiagnosticUnnecessary guifg=#737aa2]]
 --vim.cmd[[hi Normal guibg=NONE ctermbg=NONE]]
 --vim.cmd[[hi NvimTreeNormal guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE]]
 --vim.cmd[[hi NvimTreeNormalNC guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE]]
