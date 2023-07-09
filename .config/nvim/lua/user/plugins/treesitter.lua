@@ -9,7 +9,6 @@ if not status_ok then
 end
 
 configs.setup({
-
     -- one of "all" or a list of languages
 	ensure_installed = { "awk", "bash", "c", "cmake", "css", "dockerfile", "git_rebase", 
         "gitattributes", "gitcommit", "gitignore", "help", "html", "java", "javascript", 

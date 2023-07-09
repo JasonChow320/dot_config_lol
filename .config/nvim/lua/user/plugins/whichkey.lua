@@ -4,7 +4,6 @@ if not status_ok then
 end
 
 local setup = {
-
     plugins = {
         marks = true, -- shows a list of your marks on ' and `
         registers = true, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
@@ -71,7 +70,6 @@ local setup = {
 }
 
 local opts = {
-
     mode = "n", -- NORMAL mode
     prefix = "<leader>",
     buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
@@ -81,7 +79,6 @@ local opts = {
 }
 
 local mappings = {
-
     ["b"] = {
     "<cmd>Telescope buffers<cr>",
     "Buffers",
@@ -219,4 +216,3 @@ local mappings = {
 
 which_key.setup(setup)
 which_key.register(mappings, opts)
-
