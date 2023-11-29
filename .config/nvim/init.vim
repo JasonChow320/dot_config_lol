@@ -46,6 +46,9 @@ augroup END
 " auto close preview window
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif 
 
+" auto remove trailing white space
+"autocmd BufWritePre * :%s/\s\+$//e
+
 
 
 """""""""""""""""""""""
