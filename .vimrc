@@ -42,6 +42,9 @@ set number
   autocmd BufLeave,FocusLost,InsertEnter,WinLeave * if &nu | set nornu | endif
 augroup END
 
+" auto remove trailing white space
+"autocmd BufWritePre * :%s/\s\+$//e
+
 
 
 """""""""""""""""""""""
