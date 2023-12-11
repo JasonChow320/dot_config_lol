@@ -30,6 +30,9 @@ cp -r .config/nvim ~/.config/
 cp .tmux.conf ~/
 cp .vimrc ~/
 cat .bashrc >> ~/.bashrc
+cp .basrc_alias ~/
+
+source ~/.bashrc
 
 # Make directories
 
