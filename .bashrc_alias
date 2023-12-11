@@ -1,3 +1,7 @@
-alias d="cd /home/jchow/dev"
+# alias
+alias d="cd ~/dev"
 alias rw="reset -w"
 alias ..="cd .."
+
+# cmatrix
+alias cm="cmatrix -ba -u 10"
