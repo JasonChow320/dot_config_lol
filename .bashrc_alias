@@ -2,6 +2,7 @@
 alias d="cd ~/dev"
 alias rw="reset -w"
 alias ..="cd .."
+alias -- -="cd -"
 
 # cmatrix
 alias cm="cmatrix -ba -u 10"
