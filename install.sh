@@ -38,6 +38,7 @@ mkdir -p ${HOME}/dev
 
 # Install configurations
 
+echo "export CUSTOMRC_DIR=$(pwd)" >> ${HOME}/.bashrc
 ./dot_files/install.sh
 ./custom_rc/install.sh
 

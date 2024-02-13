@@ -1,4 +1,2 @@
-PWD=$(pwd)
-
-source bash_alias
-export PATH=$PATH:$PWD/scripts
+source ${CUSTOMRC_DIR}/custom_rc/bash_alias
+export PATH=$PATH:$CUSTOMRC_DIR/custom_rc/scripts
