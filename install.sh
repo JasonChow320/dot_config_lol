@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Install softwares
+# Install dependencies
 
 sudo apt update
 sudo apt-get update
@@ -11,7 +11,7 @@ doxygen doxygen-latex gdb gcc g++ openssh-server openssh-client clang-format
 yes | sudo apt-get install -y build-essential libtool autoconf automake libncurses5-dev python3-dev python3-pip python3-venv xclip xsel
 yes | sudo snap install mdview
 
-cd ~/Downloads
+cd ${HOME}/Downloads
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
 sudo dpkg -i ripgrep_13.0.0_amd64.deb
 cd -
@@ -22,22 +22,15 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 git config --global user.email "jasonchow9168@gmail.com"
 git config --global user.name "Jason Chow"
-git config --global core.excludesFile ~/.gitignore
-
-# Install configurations
-
-cp -r .config/nvim ~/.config/
-cp .tmux.conf ~/
-cp .vimrc ~/
-cat .bashrc >> ~/.bashrc
-cp .basrc_alias ~/
-
-source ~/.bashrc
+git config --global core.excludesFile ${HOME}/.gitignore
 
 # Make directories
 
-cd ~/
-mkdir -p dev
-cd dev
+mkdir -p ${HOME}/dev
+
+# Install configurations
+
+./dot_files/install.sh
+./custom_rc/install.sh
 
 # END
