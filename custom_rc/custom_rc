@@ -1,0 +1,4 @@
+PWD=$(pwd)
+
+source bash_alias
+export PATH=$PATH:$PWD/scripts

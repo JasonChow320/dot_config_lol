@@ -1,5 +1,5 @@
 # alias
-alias d="cd ~/dev"
+alias d="cd ${HOME}/dev"
 alias rw="reset -w"
 alias ..="cd .."
 alias -- -="cd -"
