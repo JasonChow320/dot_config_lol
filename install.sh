@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Regular Colors
+Red='\033[0;31m'    # Red
+Green='\033[0;32m'  # Green
+Yellow='\033[0;33m' # Yellow
+NC='\033[0m'        # No Color
+
+echo -e "${Yellow}Starting installation..${NC}"
+
 # Install dependencies
 
 sudo apt update
@@ -32,5 +40,7 @@ mkdir -p ${HOME}/dev
 
 ./dot_files/install.sh
 ./custom_rc/install.sh
+
+echo -e "${Green}Installation successful!${NC}"
 
 # END
