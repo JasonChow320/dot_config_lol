@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Assume everything in this directory can be copied to ${HOME}
+# assume everything in this directory can be copied to ${HOME}
 
 DOT_PATTERN="dot_"
 for file in *;
@@ -10,3 +10,6 @@ do
         cp -r ${file} ${HOME}/.${file/$DOT_PATTERN/}
     fi
 done
+
+# update TreeSitter and run PackerSync in neovim
+nvim --headless +PackerSync +TSUpdate +q
