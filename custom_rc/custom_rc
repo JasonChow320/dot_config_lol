@@ -1,2 +1,3 @@
 source ${CUSTOMRC_DIR}/custom_rc/bash_alias
+source ${CUSTOMRC_DIR}/custom_rc/bash_func
 export PATH=$PATH:$CUSTOMRC_DIR/custom_rc/scripts

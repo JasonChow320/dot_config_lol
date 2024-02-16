@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+# regular colors
+Red='\033[0;31m'    # Red
+Green='\033[0;32m'  # Green
+Yellow='\033[0;33m' # Yellow
+NC='\033[0m'        # No Color
+
+########################################################
+# use fuzzy finder find and cd to a specific directory #
+########################################################
+function fcd() {
+    if [[ "$#" -ge 2 ]];
+    then
+        echo "Usage: fcd <source_dir>"
+        return
+    fi
+
+    if [ -n "$1" ];
+    then
+        if [ -d "$1" ];
+        then
+            echo -e "${Yellow}Source directory set to: $1${NC}"
+            cd $1
+        else
+            echo -e "${Red}Source directory argument is not a valid path! [$1]${NC}"
+            return
+        fi
+    fi
+
+    # use fuzzy finder to find it
+    CD_DEST=$(fzf)
+    FZF_EXITCODE=$?
+    if [ $FZF_EXITCODE -ne 0 ];
+    then
+        echo -e "${Red}fuzzy finder failed with exit code $FZF_EXITCODE${NC}"
+        return
+    fi
+
+    CD_DEST=$(dirname $CD_DEST)
+    echo -e "${Green}cd ${1}$CD_DEST${NC}"
+    cd $CD_DEST
+}
