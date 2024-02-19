@@ -6,9 +6,9 @@ function create_symlink()
 {
     if [ -d $1 ];
     then
-        ln -rs $1/* $2
+        cp -r $1/* $2
     else
-        ln -s $1 $2
+        cp $1 $2
     fi
 }
 
