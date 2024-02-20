@@ -23,14 +23,20 @@ libncurses5-dev python3-dev python3-pip python3-venv xclip xsel
 
 yes | sudo snap install mdview
 
-# install ripgrep and rust
+# install ripgrep
 
 cd ${HOME}/Downloads
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
 sudo dpkg -i ripgrep_13.0.0_amd64.deb
 cd -
 
+# install rust
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# install zoxide
+
+curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 
 # set up git
 
