@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+function usage {
+cat << EOF
+
+USAGE: ff <filename> [optionals]
+
+Finds a file/directory
+
+Optionals:
+-h|--help) get usage string
+-f) files; search for files only
+-d) directories; search for directories only
+
+EOF
+exit
+}
+
+FLAGS=""
+POSITIONALS_ARGS=()
+# Parse optionals
+while [[ $# -gt 0 ]];
+do
+    case $1 in
+        -h|--help)
+            usage
+            exit
+            ;;
+        -f)
+            FLAGS=" -type f"
+            shift
+            ;;
+        -d)
+            FLAGS=" -type d"
+            shift
+            ;;
+        *)
+            POSITIONALS_ARGS+=("$1")
+            shift
+            ;;
+    esac
+done
+
+set -- "${POSITIONALS_ARGS[@]}"
+if [[ -z $1 ]]
+then
+    usage
+fi 
+
+find . $FLAGS -name "*$1*"
