@@ -6,3 +6,6 @@ alias -- -="cd -"
 
 # cmatrix
 alias cm="cmatrix -ba -u 10"
+
+# zoxide
+alias cd="z"
