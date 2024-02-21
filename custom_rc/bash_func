@@ -37,6 +37,7 @@ function fcd() {
         return
     fi
 
+    echo -e "${Yellow}file found: ${CD_DEST}${NC}"
     CD_DEST=$(dirname $CD_DEST)
     echo -e "${Green}cd ${1}$CD_DEST${NC}"
     cd $CD_DEST
