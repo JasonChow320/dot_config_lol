@@ -1,3 +1,10 @@
+# PLUGINS TO INSTALL
+#zsh-autosuggestions
+#zsh-syntax-highlighting
+
+# keybinds
+bindkey '^ ' autosuggest-accept
+
 # append to .zshrc
 source ${HOME}/.fzf/shell/completion.zsh
 source ${HOME}/.fzf/shell/key-bindings.zsh
