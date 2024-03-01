@@ -15,6 +15,8 @@ DOT_FILES=(
     "dot_vimrc"
     "dot_clang-format"
     "dot_gitignore"
+    "dot_profile"
+    "dot_zshrc"
 )
 
 for dot_file in "${DOT_FILES[@]}"
