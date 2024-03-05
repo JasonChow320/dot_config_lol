@@ -5,8 +5,13 @@ end
 
 local actions = require "telescope.actions"
 
+-- To get fzf loaded and working with telescope, you need to call
+-- load_extension, somewhere after setup function:
+require('telescope').load_extension('fzf')
+
 telescope.setup {
     defaults = {
+
         prompt_prefix = " ",
         selection_caret = " ",
         path_display = { "smart" },
@@ -94,4 +99,3 @@ telescope.setup {
         -- please take a look at the readme of the extension you want to configure
     },
 }
-

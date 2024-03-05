@@ -1,5 +1,4 @@
 local servers = {
-
     "awk_ls",
     "asm_lsp",
 	"bashls",

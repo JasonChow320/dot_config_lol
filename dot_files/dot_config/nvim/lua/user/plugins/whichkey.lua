@@ -1,26 +1,26 @@
 local status_ok, which_key = pcall(require, "which-key")
 if not status_ok then
-  return
+    return
 end
 
 local setup = {
     plugins = {
-        marks = true, -- shows a list of your marks on ' and `
-        registers = true, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
+        marks = true,       -- shows a list of your marks on ' and `
+        registers = true,   -- shows your registers on " in NORMAL or <C-r> in INSERT mode
         spelling = {
-          enabled = true, -- enabling this will show WhichKey when pressing z= to select spelling suggestions
-          suggestions = 20, -- how many suggestions should be shown in the list?
+            enabled = true, -- enabling this will show WhichKey when pressing z= to select spelling suggestions
+            suggestions = 20, -- how many suggestions should be shown in the list?
         },
         -- the presets plugin, adds help for a bunch of default keybindings in Neovim
         -- No actual key bindings are created
         presets = {
-          operators = false, -- adds help for operators like d, y, ... and registers them for motion / text object completion
-          motions = true, -- adds help for motions
-          text_objects = true, -- help for text objects triggered after entering an operator
-          windows = true, -- default bindings on <c-w>
-          nav = true, -- misc bindings to work with windows
-          z = true, -- bindings for folds, spelling and others prefixed with z
-          g = true, -- bindings for prefixed with g
+            operators = false, -- adds help for operators like d, y, ... and registers them for motion / text object completion
+            motions = true,    -- adds help for motions
+            text_objects = true, -- help for text objects triggered after entering an operator
+            windows = true,    -- default bindings on <c-w>
+            nav = true,        -- misc bindings to work with windows
+            z = true,          -- bindings for folds, spelling and others prefixed with z
+            g = true,          -- bindings for prefixed with g
         },
     },
     -- add operators that will trigger motion and text object completion
@@ -36,29 +36,29 @@ local setup = {
     icons = {
         breadcrumb = "»", -- symbol used in the command line area that shows your active key combo
         separator = "➜", -- symbol used between a key and it's label
-        group = "+", -- symbol prepended to a group
+        group = "+",      -- symbol prepended to a group
     },
     popup_mappings = {
         scroll_down = "<c-d>", -- binding to scroll down inside the popup
-        scroll_up = "<c-u>", -- binding to scroll up inside the popup
+        scroll_up = "<c-u>",   -- binding to scroll up inside the popup
     },
     window = {
-        border = "rounded", -- none, single, double, shadow
-        position = "bottom", -- bottom, top
-        margin = { 1, 0, 1, 0 }, -- extra window margin [top, right, bottom, left]
+        border = "rounded",       -- none, single, double, shadow
+        position = "bottom",      -- bottom, top
+        margin = { 1, 0, 1, 0 },  -- extra window margin [top, right, bottom, left]
         padding = { 2, 2, 2, 2 }, -- extra window padding [top, right, bottom, left]
         winblend = 0,
     },
     layout = {
-        height = { min = 4, max = 25 }, -- min and max height of the columns
-        width = { min = 20, max = 50 }, -- min and max width of the columns
-        spacing = 3, -- spacing between columns
-        align = "left", -- align columns left, center or right
+        height = { min = 4, max = 25 },                                           -- min and max height of the columns
+        width = { min = 20, max = 50 },                                           -- min and max width of the columns
+        spacing = 3,                                                              -- spacing between columns
+        align = "left",                                                           -- align columns left, center or right
     },
-    ignore_missing = true, -- enable this to hide mappings for which you didn't specify a label
+    ignore_missing = true,                                                        -- enable this to hide mappings for which you didn't specify a label
     hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ " }, -- hide mapping boilerplate
-    show_help = true, -- show help message on the command line when the popup is visible
-    triggers = "auto", -- automatically setup triggers
+    show_help = true,                                                             -- show help message on the command line when the popup is visible
+    triggers = "auto",                                                            -- automatically setup triggers
     -- triggers = {"<leader>"} -- or specify a list manually
     triggers_blacklist = {
         -- list of mode / prefixes that should never be hooked by WhichKey
@@ -70,58 +70,50 @@ local setup = {
 }
 
 local opts = {
-    mode = "n", -- NORMAL mode
+    mode = "n",     -- NORMAL mode
     prefix = "<leader>",
-    buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
-    silent = true, -- use `silent` when creating keymaps
+    buffer = nil,   -- Global mappings. Specify a buffer number for buffer local mappings
+    silent = true,  -- use `silent` when creating keymaps
     noremap = true, -- use `noremap` when creating keymaps
-    nowait = true, -- use `nowait` when creating keymaps
+    nowait = true,  -- use `nowait` when creating keymaps
 }
 
 local mappings = {
     ["b"] = {
-    "<cmd>Telescope buffers<cr>",
-    "Buffers",
+        "<cmd>Telescope buffers<cr>",
+        "Buffers",
     },
     ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
     ["E"] = { "<cmd>NvimTreeFocus<cr>", "Explorer" },
     ["q"] = { "<cmd>q!<CR>", "Quit" },
+    ["x"] = { "<cmd>bdelete!<CR>", "Quit" },
     ["w"] = { "<cmd>w<CR>", "Save" },
     ["f"] = {
-    "<cmd>Telescope find_files<cr>",
-    "Find files",
+        "<cmd>Telescope find_files<cr>",
+        "Find files",
     },
     ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
     [","] = { "<cmd>bp<cr>", "Previous Buffer" },
     ["."] = { "<cmd>bn<cr>", "Next Buffer" },
-    ["x"] = { "<cmd>bdelete!<CR>", "Quit" },
-
-    P = {
-        name = "Packer",
-        c = { "<cmd>PackerCompile<cr>", "Compile" },
-        i = { "<cmd>PackerInstall<cr>", "Install" },
-        s = { "<cmd>PackerSync<cr>", "Sync" },
-        S = { "<cmd>PackerStatus<cr>", "Status" },
-        u = { "<cmd>PackerUpdate<cr>", "Update" },
+    L = {
+        name = "Lazy",
+        l = { "<cmd>Lazy<cr>", "Lazy" },
     },
-  
     S = {
         name = "Session",
         s = {
             name = "Save session",
-            a = { "<cmd>mksession! proj.vim<cr>",  "Save session 1" },
+            a = { "<cmd>mksession! proj.vim<cr>", "Save session 1" },
             s = { "<cmd>mksession! proj1.vim<cr>", "Save session 2" },
             d = { "<cmd>mksession! proj2.vim<cr>", "Save session 3" },
         },
         r = {
             name = "Restore session",
-            a = { "<cmd>source proj.vim<cr>",  "Restore session 1" },
+            a = { "<cmd>source proj.vim<cr>", "Restore session 1" },
             s = { "<cmd>source proj1.vim<cr>", "Restore session 2" },
             d = { "<cmd>source proj2.vim<cr>", "Restore session 3" },
         },
     },
-
-
     m = {
         name = "Mark",
         a = { "<cmd> mark A<cr>", "Mark current to A" },
@@ -133,7 +125,6 @@ local mappings = {
         k = { "<cmd> mark K<cr>", "Mark current to K" },
         l = { "<cmd> mark L<cr>", "Mark current to L" },
     },
-  
     j = {
         name = "Jump to Mark",
         a = { "'A", "Jump to Mark A" },
@@ -145,7 +136,6 @@ local mappings = {
         k = { "'K", "Jump to Mark K" },
         l = { "'L", "Jump to Mark L" },
     },
-
     g = {
         name = "Git",
         g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
@@ -157,50 +147,48 @@ local mappings = {
         R = { "<cmd>lua require 'gitsigns'.reset_buffer()<cr>", "Reset Buffer" },
         s = { "<cmd>lua require 'gitsigns'.stage_hunk()<cr>", "Stage Hunk" },
         u = {
-          "<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>",
-          "Undo Stage Hunk",
+            "<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>",
+            "Undo Stage Hunk",
         },
         o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
         b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
         c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
         d = {
-          "<cmd>Gitsigns diffthis HEAD<cr>",
-          "Diff",
+            "<cmd>Gitsigns diffthis HEAD<cr>",
+            "Diff",
         },
     },
-
     l = {
         name = "LSP",
         a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
         d = {
-          "<cmd>Telescope diagnostics bufnr=0<cr>",
-          "Document Diagnostics",
+            "<cmd>Telescope diagnostics bufnr=0<cr>",
+            "Document Diagnostics",
         },
         w = {
-          "<cmd>Telescope diagnostics<cr>",
-          "Workspace Diagnostics",
+            "<cmd>Telescope diagnostics<cr>",
+            "Workspace Diagnostics",
         },
         f = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Format" },
         i = { "<cmd>LspInfo<cr>", "Info" },
         I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
         j = {
-          "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>",
-          "Next Diagnostic",
+            "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>",
+            "Next Diagnostic",
         },
         k = {
-          "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>",
-          "Prev Diagnostic",
+            "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>",
+            "Prev Diagnostic",
         },
         l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
         q = { "<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>", "Quickfix" },
         r = { "<cmd>:%s/\\s\\+$//g<cr>", "Remove white space" },
         s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
         S = {
-          "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
-          "Workspace Symbols",
+            "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
+            "Workspace Symbols",
         },
     },
-
     s = {
         name = "Search",
         b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },

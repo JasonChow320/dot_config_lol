@@ -49,18 +49,17 @@ M.setup = function()
 	vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
 		border = "rounded",
 	})
-	
-	vim.api.nvim_create_autocmd("FileType", {
-            callback = function()
-                local bufnr = vim.fn.bufnr('%')
-                vim.keymap.set("n", "<cr>", function()
-                    vim.api.nvim_command([[execute "normal! \<cr>"]])
-                    vim.api.nvim_command(bufnr .. 'bd')
-                end, { buffer = bufnr })
-             end,
-             pattern = "qf",
-	})
 
+    vim.api.nvim_create_autocmd("FileType", {
+        callback = function()
+            local bufnr = vim.fn.bufnr('%')
+            vim.keymap.set("n", "<cr>", function()
+                vim.api.nvim_command([[execute "normal! \<cr>"]])
+                vim.api.nvim_command(bufnr .. 'bd')
+            end, { buffer = bufnr })
+        end,
+        pattern = "qf",
+})
 end
 
 local function lsp_keymaps(bufnr)

@@ -9,9 +9,10 @@ if not status_ok then
 end
 
 configs.setup({
+
     -- one of "all" or a list of languages
 	ensure_installed = { "awk", "bash", "c", "cmake", "css", "dockerfile", "git_rebase", 
-        "gitattributes", "gitcommit", "gitignore", "help", "html", "java", "javascript", 
+        "gitattributes", "gitcommit", "gitignore", "html", "java", "javascript", 
         "json", "latex", "lua", "make", "markdown", "python", "regex", "rust", "sql", "vim", "yaml" },
 	ignore_install = { "" }, -- List of parsers to ignore installing
     sync_install = false,

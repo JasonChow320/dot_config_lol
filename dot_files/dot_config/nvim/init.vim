@@ -29,8 +29,8 @@ set cindent
 set nrformats+=alpha
 
 " Turn on syntax highlighting and use ron colorscheme
-syntax on                                                                                        
-colorscheme ron " this is overwritten if using neovim :D
+"syntax on
+"colorscheme ron " this is overwritten if using neovim :D
 
 " Allow backspace to act like in a regular editor in insert mode
 set backspace=indent,eol,start
@@ -44,7 +44,7 @@ set number
 augroup END
 
 " auto close preview window
-autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif 
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " auto remove trailing white space
 "autocmd BufWritePre * :%s/\s\+$//e
@@ -74,6 +74,7 @@ nnoremap <leader><space> :update<cr>
 nnoremap <leader>o o<Esc>
 nnoremap <leader>O O<Esc>
 nnoremap <leader>c :set cursorline! cursorcolumn!<cr>
+nnoremap <space> i<space><Esc>
 
 " Center searches
 nnoremap n nzz
@@ -96,6 +97,6 @@ nnoremap <leader>l<space> :%s/\t/    /g<cr>
 """""""""""
 " Plugins "
 """""""""""
-luafile ~/.config/nvim/_init.lua
+luafile ${HOME}/.config/nvim/_init.lua
 "luafile ~/appdata/Local/nvim/_init.lua
 
