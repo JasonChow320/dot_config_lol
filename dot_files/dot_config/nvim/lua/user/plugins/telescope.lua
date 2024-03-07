@@ -7,6 +7,7 @@ local actions = require "telescope.actions"
 
 telescope.setup {
     defaults = {
+
         prompt_prefix = " ",
         selection_caret = " ",
         path_display = { "smart" },
@@ -78,13 +79,12 @@ telescope.setup {
     },
 
     pickers = {
-        -- Default configuration for builtin pickers goes here:
-        -- picker_name = {
-        --   picker_config_key = value,
-        --   ...
-        -- }
-        -- Now the picker_config_key will be applied every time you call this
-        -- builtin picker
+        current_buffer_fuzzy_find = {
+            theme = "ivy",
+        },
+        live_grep = {
+            theme = "ivy",
+        }
     },
     extensions = {
         fzf = {
@@ -92,10 +92,14 @@ telescope.setup {
             override_generic_sorter = true,  -- override the generic sorter
             override_file_sorter = true,     -- override the file sorter
             case_mode = "ignore_case",       -- or "ignore_case" or "respect_case"
-        }
+        },
+        rooter = {
+           enable = true,
+           patterns = { ".git" },
+           debug = false
+        },
     },
 }
 
--- To get fzf loaded and working with telescope, you need to call
--- load_extension, somewhere after setup function:
 require('telescope').load_extension('fzf')
+require("telescope").load_extension("rooter")
