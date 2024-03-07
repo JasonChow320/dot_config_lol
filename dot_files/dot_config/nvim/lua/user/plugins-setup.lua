@@ -1,5 +1,5 @@
 -- Use a protected call so we don't error out on first use
-local status_ok, packer = pcall(require, "lazy")
+local status_ok, lazy = pcall(require, "lazy")
 if not status_ok then
 	return
 end
@@ -21,7 +21,11 @@ return ({
 	"hrsh7th/cmp-nvim-lua",
 
 	-- Snippets
-	"L3MON4D3/LuaSnip", --snippet engine
+    {
+        "L3MON4D3/LuaSnip", --snippet engine
+        version = "v2.*",
+        build = "make install_jsregexp"
+    },
 	"rafamadriz/friendly-snippets", -- a bunch of snippets to use
 
 	-- LSP
@@ -33,9 +37,12 @@ return ({
 
 	-- Telescope
 	"nvim-telescope/telescope.nvim",
-
     -- Fzf telescope
-    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' },
+    {
+        'nvim-telescope/telescope-fzf-native.nvim',
+        build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
+    },
+    "desdic/telescope-rooter.nvim",
 
 	-- Treesitter
 	"nvim-treesitter/nvim-treesitter",
@@ -51,7 +58,11 @@ return ({
 	"nvim-lualine/lualine.nvim",
 
 	-- bufferline
-	{ "akinsho/bufferline.nvim", version = "v3.*", dependencies = "nvim-tree/nvim-web-devicons" },
+	{
+        "akinsho/bufferline.nvim",
+        version = "v3.*",
+        dependencies = "nvim-tree/nvim-web-devicons"
+    },
 
 	-- Gitsigns
 	"lewis6991/gitsigns.nvim",
