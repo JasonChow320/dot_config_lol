@@ -69,4 +69,7 @@ return ({
 
 	-- impatient
 	"lewis6991/impatient.nvim",
+	
+    -- toggleterm
+    {'akinsho/toggleterm.nvim', version = "*", config = true}
 })
