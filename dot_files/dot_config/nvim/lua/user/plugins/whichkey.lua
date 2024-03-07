@@ -79,27 +79,30 @@ local opts = {
 }
 
 local mappings = {
-    ["b"] = {
-        "<cmd>Telescope buffers<cr>",
-        "Buffers",
-    },
-    ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-    ["E"] = { "<cmd>NvimTreeFocus<cr>", "Explorer" },
     ["q"] = { "<cmd>q!<CR>", "Quit" },
     ["x"] = { "<cmd>bdelete!<CR>", "Quit" },
     ["w"] = { "<cmd>w<CR>", "Save" },
+    [","] = { "<cmd>bp<cr>", "Previous Buffer" },
+    ["."] = { "<cmd>bn<cr>", "Next Buffer" },
+
     ["f"] = {
         "<cmd>Telescope find_files<cr>",
         "Find files",
     },
     ["F"] = { "<cmd>Telescope live_grep<cr>", "Find Text" },
-    [","] = { "<cmd>bp<cr>", "Previous Buffer" },
-    ["."] = { "<cmd>bn<cr>", "Next Buffer" },
+    ["b"] = {
+        "<cmd>Telescope current_buffer_fuzzy_find<cr>",
+        "Lines in buffer",
+    },
+
+    ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
+    ["E"] = { "<cmd>NvimTreeFocus<cr>", "Explorer" },
+
     L = {
         name = "Lazy",
         l = { "<cmd>Lazy<cr>", "Lazy" },
     },
-    S = {
+    s = {
         name = "Session",
         s = {
             name = "Save session",
@@ -189,7 +192,7 @@ local mappings = {
             "Workspace Symbols",
         },
     },
-    s = {
+    S = {
         name = "Search",
         b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
         c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
@@ -202,5 +205,7 @@ local mappings = {
     },
 }
 
+which_key.setup(setup)
+which_key.register(mappings, opts)
 which_key.setup(setup)
 which_key.register(mappings, opts)
