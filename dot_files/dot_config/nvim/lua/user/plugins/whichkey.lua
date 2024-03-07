@@ -98,6 +98,8 @@ local mappings = {
     ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
     ["E"] = { "<cmd>NvimTreeFocus<cr>", "Explorer" },
 
+    ["t"] = { "<cmd>ToggleTerm size=40<cr>", "Terminal" },
+    
     L = {
         name = "Lazy",
         l = { "<cmd>Lazy<cr>", "Lazy" },
