@@ -11,12 +11,12 @@ DOT_PATTERN="dot_"
 CUR_DIR="${CUSTOMRC_DIR}/dot_files/"
 DOT_FILES=(
     "dot_config/nvim"
+    "dot_config/zsh/dot_zshrc"
     "dot_tmux.conf"
     "dot_vimrc"
     "dot_clang-format"
     "dot_gitignore"
     "dot_profile"
-    "dot_zshrc"
 )
 
 for dot_file in "${DOT_FILES[@]}"
