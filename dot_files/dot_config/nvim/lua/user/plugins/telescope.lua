@@ -94,7 +94,7 @@ telescope.setup {
             case_mode = "ignore_case",       -- or "ignore_case" or "respect_case"
         },
         rooter = {
-           enable = true,
+           enable = false,
            patterns = { ".git" },
            debug = false
         },
