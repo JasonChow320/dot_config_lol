@@ -75,6 +75,7 @@ nnoremap <leader>o o<Esc>
 nnoremap <leader>O O<Esc>
 nnoremap <leader>c :set cursorline! cursorcolumn!<cr>
 nnoremap <space> i<space><Esc>
+nnoremap <leader>u viwU
 
 " Center searches
 nnoremap n nzz
