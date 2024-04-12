@@ -94,6 +94,10 @@ local mappings = {
         "<cmd>Telescope current_buffer_fuzzy_find<cr>",
         "Lines in buffer",
     },
+    ["B"] = {
+        "<cmd>Telescope rooter toggle<cr>",
+        "Toggle rooter",
+    },
 
     ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
     ["E"] = { "<cmd>NvimTreeFocus<cr>", "Explorer" },
