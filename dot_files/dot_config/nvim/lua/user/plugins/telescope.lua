@@ -84,7 +84,10 @@ telescope.setup {
         },
         live_grep = {
             theme = "ivy",
-        }
+        },
+        find_files = {
+            hidden = true,
+        },
     },
     extensions = {
         fzf = {
