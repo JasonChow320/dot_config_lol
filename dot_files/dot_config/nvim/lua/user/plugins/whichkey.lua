@@ -84,6 +84,7 @@ local mappings = {
     ["w"] = { "<cmd>w<CR>", "Save" },
     [","] = { "<cmd>bp<cr>", "Previous Buffer" },
     ["."] = { "<cmd>bn<cr>", "Next Buffer" },
+    ["C"] = { "<cmd>TSContextToggle<cr>", "Toggle TS Context" },
 
     ["f"] = {
         "<cmd>Telescope find_files<cr>",
@@ -103,7 +104,7 @@ local mappings = {
     ["E"] = { "<cmd>NvimTreeFocus<cr>", "Explorer" },
 
     ["t"] = { "<cmd>ToggleTerm size=40<cr>", "Terminal" },
-    
+
     L = {
         name = "Lazy",
         l = { "<cmd>Lazy<cr>", "Lazy" },
@@ -211,7 +212,5 @@ local mappings = {
     },
 }
 
-which_key.setup(setup)
-which_key.register(mappings, opts)
 which_key.setup(setup)
 which_key.register(mappings, opts)
