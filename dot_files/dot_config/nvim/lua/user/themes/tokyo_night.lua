@@ -4,14 +4,20 @@ if not status_ok then
 end
 
 -- Lua to remove plugin background
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme tokyonight-storm]]
 vim.cmd[[hi DiagnosticUnnecessary guifg=#737aa2]]
+vim.cmd[[hi Normal guibg=#292e42]]
+
+-- For 
 --vim.cmd[[hi Normal guibg=NONE ctermbg=NONE]]
 --vim.cmd[[hi NvimTreeNormal guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE]]
 --vim.cmd[[hi NvimTreeNormalNC guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE]]
 --vim.cmd[[hi TelescopeNormal guibg=NONE guifg=NONE ctermfg=NONE ctermfg=NONE]]
 --vim.cmd[[hi TelescopeBorder guibg=NONE guifg=NONE]]
 --vim.cmd[[hi LineNr guibg=#1f2335]]
+--vim.cmd[[hi LineNr guibg=NONE guifg=NONE]]
+--vim.cmd[[hi SignColumn guibg=NONE guifg=NONE]]
+--]
 
 
 -- enable theme for colorscheme
@@ -23,10 +29,9 @@ require('lualine').setup {
   }
 }
 
-require("tokyonight").setup({
+tokyonight.setup({
   -- your configuration comes here
   -- or leave it empty to use the default settings
-  --style = "storm", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
   style = "storm", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
   light_style = "night", -- The theme is used when the background is set to light
   transparent = true, -- Enable this to disable setting the background color
